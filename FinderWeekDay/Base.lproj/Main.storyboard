@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,80 +13,126 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinderWeekDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiinder Weekday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYF-cj-3k3">
-                                <rect key="frame" x="79.5" y="64" width="216" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiinder Weekday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYF-cj-3k3">
+                                <rect key="frame" x="99" y="64" width="216" height="56"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCt-b0-j6U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCt-b0-j6U">
                                 <rect key="frame" x="16" y="173" width="70" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="97Q-lA-DuB"/>
+                                    <constraint firstAttribute="height" constant="32" id="Se3-tB-4qX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptp-XB-55o">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptp-XB-55o">
                                 <rect key="frame" x="16" y="225" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BoS-IE-qD9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="oF2-XA-EaZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liS-II-oAS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liS-II-oAS">
                                 <rect key="frame" x="16" y="274" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1YF-6f-MAw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="5T0-5M-sIS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here you will see result day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uni-Os-i24">
-                                <rect key="frame" x="97.5" y="337" width="180" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see result day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uni-Os-i24">
+                                <rect key="frame" x="117" y="337" width="180" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1oV-g8-3lW"/>
+                                    <constraint firstAttribute="height" constant="114" id="npg-be-D7A"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWO-2C-nba" userLabel="DataTF">
-                                <rect key="frame" x="116" y="172" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWO-2C-nba" userLabel="DataTF">
+                                <rect key="frame" x="116" y="172" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w85-k2-fCt" userLabel="MonthTF">
-                                <rect key="frame" x="116" y="223" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w85-k2-fCt" userLabel="MonthTF">
+                                <rect key="frame" x="116" y="223" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-HY-fHW" userLabel="YearTF">
-                                <rect key="frame" x="116" y="272" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-HY-fHW" userLabel="YearTF">
+                                <rect key="frame" x="116" y="272" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA3-jV-x6G">
-                                <rect key="frame" x="140" y="512" width="95" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA3-jV-x6G">
+                                <rect key="frame" x="159.66666666666666" y="512" width="95" height="42"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Find Day">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="findDayPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gO-CW-PvK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.94253069162368774" green="0.77690383863079493" blue="0.46830083124324523" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.53312767607141265" green="0.76962541510360416" blue="0.47456577949803153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tXh-HY-fHW" firstAttribute="centerY" secondItem="liS-II-oAS" secondAttribute="centerY" id="0S4-T4-VyO"/>
+                            <constraint firstItem="OWO-2C-nba" firstAttribute="leading" secondItem="w85-k2-fCt" secondAttribute="leading" id="3Hf-lH-bQv"/>
+                            <constraint firstItem="ptp-XB-55o" firstAttribute="top" secondItem="FCt-b0-j6U" secondAttribute="bottom" constant="20" id="3X2-k1-OQd"/>
+                            <constraint firstItem="Uni-Os-i24" firstAttribute="top" secondItem="tXh-HY-fHW" secondAttribute="bottom" constant="31" id="7Cv-jH-Tip"/>
+                            <constraint firstItem="liS-II-oAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8SV-6g-ONO"/>
+                            <constraint firstItem="liS-II-oAS" firstAttribute="top" secondItem="ptp-XB-55o" secondAttribute="bottom" constant="19" id="AA5-sq-Ed4"/>
+                            <constraint firstItem="FCt-b0-j6U" firstAttribute="top" secondItem="gYF-cj-3k3" secondAttribute="bottom" constant="53" id="HVU-rY-yfr"/>
+                            <constraint firstItem="tXh-HY-fHW" firstAttribute="leading" secondItem="liS-II-oAS" secondAttribute="trailing" constant="52" id="Jy1-3A-aLI"/>
+                            <constraint firstItem="NA3-jV-x6G" firstAttribute="top" secondItem="Uni-Os-i24" secondAttribute="bottom" constant="61" id="KVg-RV-OHD"/>
+                            <constraint firstItem="w85-k2-fCt" firstAttribute="leading" secondItem="ptp-XB-55o" secondAttribute="trailing" constant="30" id="MYl-0D-fZV"/>
+                            <constraint firstItem="gYF-cj-3k3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PPU-eI-BYf"/>
+                            <constraint firstItem="OWO-2C-nba" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FCt-b0-j6U" secondAttribute="trailing" constant="8" symbolic="YES" id="Rg7-ek-5JQ"/>
+                            <constraint firstItem="Uni-Os-i24" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Udl-xW-NYS"/>
+                            <constraint firstItem="ptp-XB-55o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YQI-hc-fcq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWO-2C-nba" secondAttribute="trailing" constant="82" id="cLk-w2-wEV"/>
+                            <constraint firstItem="OWO-2C-nba" firstAttribute="centerY" secondItem="FCt-b0-j6U" secondAttribute="centerY" id="dIV-fb-uz8"/>
+                            <constraint firstItem="w85-k2-fCt" firstAttribute="centerY" secondItem="ptp-XB-55o" secondAttribute="centerY" id="jJx-aa-j5H"/>
+                            <constraint firstItem="OWO-2C-nba" firstAttribute="trailing" secondItem="w85-k2-fCt" secondAttribute="trailing" id="jbN-n2-dBC"/>
+                            <constraint firstItem="gYF-cj-3k3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="jyY-x2-Wb2"/>
+                            <constraint firstItem="NA3-jV-x6G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kF1-Bb-cac"/>
+                            <constraint firstItem="FCt-b0-j6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sut-Z6-TTy"/>
+                            <constraint firstItem="OWO-2C-nba" firstAttribute="trailing" secondItem="tXh-HY-fHW" secondAttribute="trailing" id="v3x-dQ-SYO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataTF" destination="OWO-2C-nba" id="XVs-Zh-XIp"/>
+                        <outlet property="findDayButton" destination="NA3-jV-x6G" id="5X0-DT-60v"/>
+                        <outlet property="monthTF" destination="w85-k2-fCt" id="0YR-R0-sez"/>
+                        <outlet property="resultLabel" destination="Uni-Os-i24" id="AtL-ek-Cnm"/>
+                        <outlet property="yearTF" destination="tXh-HY-fHW" id="Jc9-3p-92L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="34.632683658170919"/>
+            <point key="canvasLocation" x="-1028" y="2"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
