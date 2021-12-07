@@ -62,21 +62,32 @@
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWO-2C-nba" userLabel="DataTF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWO-2C-nba" userLabel="DataTF">
                                 <rect key="frame" x="116" y="172" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w85-k2-fCt" userLabel="MonthTF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w85-k2-fCt" userLabel="MonthTF">
                                 <rect key="frame" x="116" y="223" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-HY-fHW" userLabel="YearTF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-HY-fHW" userLabel="YearTF">
                                 <rect key="frame" x="116" y="272" width="216" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFd-2o-DqL">
+                                <rect key="frame" x="171.66666666666666" y="521" width="71" height="31"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restsrt">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQd-SX-cWM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA3-jV-x6G">
                                 <rect key="frame" x="159.66666666666666" y="512" width="95" height="42"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,6 +107,7 @@
                             <constraint firstItem="tXh-HY-fHW" firstAttribute="centerY" secondItem="liS-II-oAS" secondAttribute="centerY" id="0S4-T4-VyO"/>
                             <constraint firstItem="OWO-2C-nba" firstAttribute="leading" secondItem="w85-k2-fCt" secondAttribute="leading" id="3Hf-lH-bQv"/>
                             <constraint firstItem="ptp-XB-55o" firstAttribute="top" secondItem="FCt-b0-j6U" secondAttribute="bottom" constant="20" id="3X2-k1-OQd"/>
+                            <constraint firstItem="dFd-2o-DqL" firstAttribute="width" secondItem="NA3-jV-x6G" secondAttribute="width" multiplier="0.747368" id="44l-Zb-el6"/>
                             <constraint firstItem="Uni-Os-i24" firstAttribute="top" secondItem="tXh-HY-fHW" secondAttribute="bottom" constant="31" id="7Cv-jH-Tip"/>
                             <constraint firstItem="liS-II-oAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8SV-6g-ONO"/>
                             <constraint firstItem="liS-II-oAS" firstAttribute="top" secondItem="ptp-XB-55o" secondAttribute="bottom" constant="19" id="AA5-sq-Ed4"/>
@@ -109,10 +121,13 @@
                             <constraint firstItem="ptp-XB-55o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YQI-hc-fcq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWO-2C-nba" secondAttribute="trailing" constant="82" id="cLk-w2-wEV"/>
                             <constraint firstItem="OWO-2C-nba" firstAttribute="centerY" secondItem="FCt-b0-j6U" secondAttribute="centerY" id="dIV-fb-uz8"/>
+                            <constraint firstItem="dFd-2o-DqL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="521" id="jBt-3P-1Xb"/>
                             <constraint firstItem="w85-k2-fCt" firstAttribute="centerY" secondItem="ptp-XB-55o" secondAttribute="centerY" id="jJx-aa-j5H"/>
                             <constraint firstItem="OWO-2C-nba" firstAttribute="trailing" secondItem="w85-k2-fCt" secondAttribute="trailing" id="jbN-n2-dBC"/>
                             <constraint firstItem="gYF-cj-3k3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="jyY-x2-Wb2"/>
                             <constraint firstItem="NA3-jV-x6G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kF1-Bb-cac"/>
+                            <constraint firstItem="dFd-2o-DqL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nGX-PO-hy3"/>
+                            <constraint firstItem="dFd-2o-DqL" firstAttribute="height" secondItem="NA3-jV-x6G" secondAttribute="height" multiplier="0.738095" id="qcM-UQ-24i"/>
                             <constraint firstItem="FCt-b0-j6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sut-Z6-TTy"/>
                             <constraint firstItem="OWO-2C-nba" firstAttribute="trailing" secondItem="tXh-HY-fHW" secondAttribute="trailing" id="v3x-dQ-SYO"/>
                         </constraints>
@@ -121,6 +136,7 @@
                         <outlet property="dataTF" destination="OWO-2C-nba" id="XVs-Zh-XIp"/>
                         <outlet property="findDayButton" destination="NA3-jV-x6G" id="5X0-DT-60v"/>
                         <outlet property="monthTF" destination="w85-k2-fCt" id="0YR-R0-sez"/>
+                        <outlet property="restartButton" destination="dFd-2o-DqL" id="lHH-2g-nEs"/>
                         <outlet property="resultLabel" destination="Uni-Os-i24" id="AtL-ek-Cnm"/>
                         <outlet property="yearTF" destination="tXh-HY-fHW" id="Jc9-3p-92L"/>
                     </connections>
@@ -131,6 +147,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
